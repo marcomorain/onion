@@ -23,6 +23,8 @@
 	library; if not see <http://www.gnu.org/licenses/>.
 	*/
 
+#define _DARWIN_C_SOURCE
+
 #include <assert.h>
 #include <errno.h>
 
@@ -39,7 +41,7 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <malloc.h>
+#include <stdlib.h>
 #include <libgen.h>
 #include <ctype.h>
 

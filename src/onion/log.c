@@ -29,7 +29,12 @@
 #include <time.h>
 #include <string.h>
 #include <stdlib.h>
+
+#undef  __DARWIN_C_LEVEL
+#define __DARWIN_C_LEVEL (__DARWIN_C_FULL)
+
 #include <syslog.h>
+#include <stdarg.h>
 
 #ifdef HAVE_PTHREADS
 #include <pthread.h>

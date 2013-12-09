@@ -25,10 +25,11 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <unistd.h>
 
 #include <security/pam_appl.h>
-#include <security/pam_misc.h>
+//#include <security/pam_misc.h>
 
 #include <onion/handler.h>
 #include <onion/response.h>

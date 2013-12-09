@@ -23,6 +23,8 @@
 	library; if not see <http://www.gnu.org/licenses/>.
 	*/
 
+#define _DARWIN_C_SOURCE
+	
 #include "log.h"
 #include "websocket.h"
 #include "response.h"
@@ -33,8 +35,10 @@
 #include <poll.h>
 #include <errno.h>
 #include <string.h>
+#include <strings.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 enum onion_websocket_flags_e{
 	WS_FIN=1,
